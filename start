@@ -1,0 +1,3 @@
+#!/bin/sh
+
+npx tiddlywiki --listen port=8090 username=TJ

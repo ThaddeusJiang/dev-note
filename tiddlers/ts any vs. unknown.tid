@@ -1,0 +1,29 @@
+created: 20230221000705858
+modified: 20230221004115751
+tags: JS/TS
+title: ts any vs. unknown
+
+TypeScript any 和 unknown 区别
+
+1. any 类型是 TypeScript 预定义的宽松类型，它可以表示任何类型的值，并且可以被任意改变：
+
+```ts
+let myAny: any = 'Hello World';
+myAny = 42;
+```
+
+2. unknown 类型是 TypeScript 预定义的严格类型，它可以表示任何类型的值，但是只有在它被确定是某个类型之后，才能改变它：
+
+```ts
+let myUnknown: unknown = 'Hello World';
+
+// 报错：Type 'unknown' is not assignable to type 'number'
+myUnknown = 42;
+
+// 先确定 myUnknown 的类型
+if (typeof myUnknown === 'string') {
+  let myString: string = myUnknown;
+  // 可以改变了
+  myString = 'Hello TypeScript';
+}
+```
