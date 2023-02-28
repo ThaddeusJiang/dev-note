@@ -1,0 +1,39 @@
+created: 20230228051829728
+modified: 20230228052412708
+tags: TiddlyWiki
+title: TiddlyWiki 批量管理 tags
+type: text/vnd.tiddlywiki
+
+可以使用 `<$action-listops />`
+
+例：追加 tag
+
+```
+<$button>Add TiddlyWiki tag for the tiddlers with prefix TiddlyWiki
+<$list filter='[!is[system]prefix[TiddlyWiki]]'>
+<$action-listops $tags="TiddlyWiki"/>
+</$list>
+</$button>
+```
+
+<$button>Add TiddlyWiki tag for the all tiddlers with prefix TiddlyWiki
+<$list filter='[!is[system]prefix[TiddlyWiki]]'>
+<$action-listops $tags="TiddlyWiki"/>
+</$list>
+</$button>
+
+例：移除 tag
+
+```
+<$button>Remove TiddlyWiki tag 
+<$list filter='[!is[system]tag[TiddlyWiki]]'>
+<$action-listops $tags="-TiddlyWiki"/>
+</$list>
+</$button>
+```
+
+<$button>Remove TiddlyWiki tag 
+<$list filter='[!is[system]tag[TiddlyWiki]]'>
+<$action-listops $tags="-TiddlyWiki"/>
+</$list>
+</$button>

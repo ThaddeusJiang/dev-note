@@ -1,0 +1,19 @@
+created: 20230228055835056
+creator: ThaddeusJiang
+modified: 20230228060722766
+modifier: ThaddeusJiang
+tags: TiddlyWiki
+title: TiddlyWiki 使用变量
+type: text/vnd.tiddlywiki
+
+方法1: 使用 `<<currentTiddler>>`
+
+```
+<$text text=<<currentTiddler>> />
+```
+
+方法2: 使用 `{{$:/SiteTitle}}`
+
+```
+<$text text={{$:/SiteTitle}} />
+```

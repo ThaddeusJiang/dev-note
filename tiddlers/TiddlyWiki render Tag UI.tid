@@ -1,0 +1,23 @@
+created: 20220601133818754
+modified: 20230228052406025
+tags: TiddlyWiki
+title: TiddlyWiki render Tag UI
+type: text/vnd.tiddlywiki
+
+方法1:
+
+```
+<<tag "TiddlyWiki">>
+```
+
+<<tag "TiddlyWiki">>
+
+方法2:
+
+```
+{{TiddlyWiki||$:/core/ui/TagTemplate}}
+```
+
+{{TiddlyWiki||$:/core/ui/TagTemplate}}
+
+原来这么简单。

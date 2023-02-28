@@ -1,0 +1,18 @@
+created: 20230228052823943
+modified: 20230228053002499
+tags: TiddlyWiki
+title: TiddlyWiki delete tiddlers
+type: text/vnd.tiddlywiki
+
+```
+<$button>
+<$action-deletetiddler $filter="[tag[Temp]]"/>
+Delete tiddlers tagged "Temp"
+</$button>
+```
+
+<$button>
+<$action-deletetiddler $filter="[tag[Temp]]"/>
+Delete tiddlers tagged "Temp"
+</$button>
+

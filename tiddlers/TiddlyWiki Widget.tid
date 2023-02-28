@@ -1,0 +1,18 @@
+created: 20230228053253194
+modified: 20230228053640322
+tags: TiddlyWiki
+title: TiddlyWiki Widget
+type: text/vnd.tiddlywiki
+
+形如
+
+```
+<$list filter="[tag[TiddlyWiki]sort[title]]"/>
+```
+
+<$list filter="[tag[TiddlyWiki]sort[title]]" 
+ counter="counter" >
+<p>
+<<counter>> : <$text text=<<currentTiddler>> />
+</p>
+</$list>

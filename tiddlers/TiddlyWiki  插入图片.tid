@@ -1,0 +1,60 @@
+created: 20230217004802664
+modified: 20230228052406023
+tags: TiddlyWiki
+title: TiddlyWiki  插入图片
+type: text/vnd.tiddlywiki
+
+默认有 4 种方法。但是默认方法有一个共同的缺点，即没有办法主动显示一段描述。
+
+所以我开发了一个 Macro
+
+!! Install
+
+Drag <<tag "$:/plugins/ThaddeusJiang/beauty/macros/img">> to your TiddlyWiki
+
+!! Usage
+
+```
+<<img "https://pbs.twimg.com/profile_images/1350408865834172417/Xq8w4cX7_400x400.jpg" "Thaddeus Jiang">>
+```
+
+<<img "https://pbs.twimg.com/profile_images/1350408865834172417/Xq8w4cX7_400x400.jpg" "Thaddeus Jiang">>
+
+---
+
+! 默认方法
+
+方法1: Image Formatting
+
+```
+[img[https://tiddlywiki.com/favicon.ico]]
+```
+
+[img[https://tiddlywiki.com/favicon.ico]]
+
+
+
+方法2：Displaying Images via Transclusion
+
+```
+{{TJ.jpg}}
+```
+
+{{TJ.jpg}}
+
+方法3: Images as Links
+
+```
+<$link to="HelloThere" tooltip="Custom tooltip">{{$:/core/icon}}</$link>
+```
+
+<$link to="HelloThere" tooltip="Custom tooltip">{{$:/core/icon}}</$link>
+
+方法4: ImageWidget
+
+```
+<$image source="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Transclusion_simple.svg/250px-Transclusion_simple.svg.png" />
+```
+
+<$image source="https://pbs.twimg.com/profile_images/1350408865834172417/Xq8w4cX7_400x400.jpg" />
+
